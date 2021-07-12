@@ -114,7 +114,6 @@ ggplot(df[1:10,], aes(x='', y=Recovered, fill=Province_State)) +
   geom_text(aes(label = paste0(Recovered)), position = position_stack(vjust=0.5)) 
 
 #dothi 10
-#Su dung ggplot ve pie chart
 ggplot(df1[20:29,], aes(x='', y=Deaths, fill=Province_State)) +
   geom_bar(stat="identity", width=1) +
   coord_polar("y", start=0)+
